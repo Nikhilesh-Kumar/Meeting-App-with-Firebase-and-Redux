@@ -56,9 +56,9 @@ function Navbar() {
             <div className="flex gap-4 items-center">
                 <Link to="/previous">Past Meetings</Link>
                 <Sheet>
-                    <SheetTrigger asChild>
-                    <Button variant="outline">Add Meeting</Button>
-                    </SheetTrigger>
+                    <SheetTrigger render={<Button variant="outline">Add Meeting</Button>} />
+                    {/* <Button variant="outline">Add Meeting</Button> */}
+                    {/* </SheetTrigger> */}
                     <SheetContent>
                     <SheetHeader>
                         <SheetTitle>Add New Meeting</SheetTitle>
@@ -95,9 +95,9 @@ function Navbar() {
                     </div>
                     <SheetFooter>
                         <Button onClick={handleSubmit}>Add Meeting</Button>
-                        <SheetClose asChild>
-                        <Button variant="outline">Close</Button>
-                        </SheetClose>
+                        <SheetClose render={<Button variant="outline">Close</Button>} />
+                        {/* <Button variant="outline">Close</Button> */}
+                        {/* </SheetClose> */}
                     </SheetFooter>
                     </SheetContent>
                 </Sheet>
